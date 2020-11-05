@@ -28,7 +28,7 @@
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-      background-color:blue;
+      background-color:#2D2D6A;
 
 }
 .banner {
@@ -152,3 +152,132 @@
 }
 
 
+.footer {
+  background: #2D2D6A;
+  display: flex;
+  align-items: center;
+  height: 90px;
+  justify-content: space-around;
+  padding: 0px 50px;
+  color: #6CA215;
+  // position:absolute;
+  // bottom: 0;
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.footer-links a {
+  color: #C4C2B7;
+  opacity: 0.8;
+  text-decoration: none;
+  font-size: 60px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 1;
+}
+
+.main-container{
+  height: calc(100vh - 80px);
+  background: black;
+  position: relative;
+
+}
+
+
+.hexagon {
+  position: relative;
+  width: 300px;
+  height: 173.21px;
+  background-color: #64C7CC;
+  margin: 86.60px 0;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 86.60px solid #64C7CC;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 86.60px solid #64C7CC;
+}
+
+
+.hexagon-2 {
+  position: relative;
+  width: 250px;
+  height: 173.21px;
+  background-color: white;
+  margin: 86.60px 0;
+}
+
+.hexagon-2:before,
+.hexagon-2:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 125px solid transparent;
+  border-right: 125px solid transparent;
+}
+
+.hexagon-2:before {
+  bottom: 100%;
+  border-bottom: 86.60px solid white;
+}
+
+.hexagon-2:after {
+  top: 100%;
+  width: 0;
+  border-top: 86.60px solid white;
+}
+
+
+
+.hex {
+    margin-top: 70px;
+    width: 208px;
+    height: 120px;
+    background: #6C6;
+    position: relative;
+}
+.hex:before, .hex:after {
+    content:"";
+    border-left: 104px solid transparent;
+    border-right: 104px solid transparent;
+    position: absolute;
+}
+.hex:before {
+    top: -59px;
+    border-bottom: 60px solid #6C6;
+}
+.hex:after {
+    bottom: -59px;
+    border-top: 60px solid #6C6;
+}
+.hex.inner {
+    background-color:white;
+    -webkit-transform: scale(.8, .8);
+    -moz-transform: scale(.8, .8);
+    transform: scale(.8, .8);
+    z-index:1;
+}
+.hex.inner:before {
+    border-bottom: 60px solid white;
+}
+.hex.inner:after {
+    border-top: 60px solid white;
+}
