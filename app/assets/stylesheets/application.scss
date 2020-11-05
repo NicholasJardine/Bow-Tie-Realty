@@ -18,10 +18,19 @@
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-      background-color:#2B2B6D;
+      background-color:#C4C2B7;
+      height:100vh
 
 }
+.container-2-1{
+  width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+      background-color:blue;
 
+}
 .banner {
   background-size: cover;
   background-position: center;
@@ -94,6 +103,24 @@
 
 }
 
+
+.diagonal-box-3 {
+  background-image: linear-gradient(45deg, #F4F4F4, #F4F4F4);
+    transform: skewY(22deg);
+    height:64px;
+    border-color:#F4F4F4;
+
+}
+
+.diagonal-box-4 {
+  background-image: linear-gradient(45deg, #F4F4F4, #F4F4F4);
+    transform: skewY(-22deg);
+    height:64px;
+    border-color:#F4F4F4;
+
+}
+
+
 .content {
   max-width: 50em;
     margin: 0 auto;
@@ -111,3 +138,17 @@
    background:transparent;
 
 }
+
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 450px solid transparent;
+  border-right: 450px solid transparent;
+
+  border-top: 360px solid #2B2B6D;
+
+
+}
+
+
