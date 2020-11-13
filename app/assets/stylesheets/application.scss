@@ -19,7 +19,7 @@
     margin-right: auto;
     margin-left: auto;
       background-color:#C4C2B7;
-      height:100vh
+      height:120vh;
 
 }
 .container-2-1{
@@ -160,8 +160,10 @@
   justify-content: space-around;
   padding: 0px 50px;
   color: #6CA215;
-  // position:absolute;
-  // bottom: 0;
+  position:fixed;
+   bottom: 0;
+   left:0;
+   right:0;
 }
 .footer-links {
   display: flex;
