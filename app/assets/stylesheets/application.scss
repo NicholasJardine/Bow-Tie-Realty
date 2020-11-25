@@ -166,7 +166,8 @@
 
 
 .footer {
-  background: #2D2D6A;
+  background-image: linear-gradient(#2D2D6A, white);
+  // background: #2D2D6A;
   display: flex;
   align-items: center;
   height: 90px;
@@ -186,7 +187,7 @@
 
 }
 .footer-links a {
-  color: #C4C2B7;
+  color: black;
   opacity: 0.8;
   text-decoration: none;
   font-size: 60px;
