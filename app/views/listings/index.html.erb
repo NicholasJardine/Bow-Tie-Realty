@@ -3,7 +3,18 @@
     <div class="col-12">
 
  <% @listings.each do |listing| %>
- <%= render 'shared/listing_card' %>
+ <% if listing.photo.attached? %>
+<div class="card-product">
+<%= cl_image_tag listing.photo %>
+
+ <div class="card-product-infos">
+    <h2>listing.price</h2>
+    <p>listing.description</p>
+  </div>
+</div>
+
+ <% end %>
+
  <% end %>
     </div>
   </div>

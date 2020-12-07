@@ -23,6 +23,8 @@
                 <%= f.input :pic8, as: :file, label: "Additional photo for listing" %>
                 <%= f.input :pic9, as: :file, label: "Additional photo for listing" %>
                 <%= f.input :pic10, as: :file, label: "Additional photo for listing" %>
+                <%= f.hidden_field :user_id, value: @user.id%>
+
         <%= f.button :submit, class: " btn-flat-arlene my-5", value: "Create listing" %>
 <% end %>
 
