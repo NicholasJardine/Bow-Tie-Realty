@@ -20,13 +20,12 @@
       </p>
 
 
-<!--       <li class="nav-item dropdown" style="list-style-type: none;">
-        <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <%= link_to "Action", "#", class: "dropdown-item" %>
-          <%= link_to "Another action", "#", class: "dropdown-item" %>
-        </div>
-      </li> -->
+      <p class="nav-item active">
+        <%= link_to "Sign up", new_user_registration_path, class: "nav-link" %>
+      </p>
+      <p class="nav-item active">
+        <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+      </p>
   </div>
 </div>
 
