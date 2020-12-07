@@ -1,11 +1,12 @@
 class ListingsController < ApplicationController
   def index
+    @user = current_user
     @listings = listing.all
 
   end
     def new
     @user = current_user
-    @form = CovidForm.new
+    @listing = Listing.new
   end
 
   def create
@@ -21,8 +22,28 @@ class ListingsController < ApplicationController
 
 def show
   @user = current_user
-  @form = CovidForm.find(params[:id])
+  @listing = Listing.find(params[:id])
 end
+
+
+  def edit
+    @user = current_user
+    @listing = Listing.find(params[:id])
+
+  end
+
+  def update
+  @listing = Listing.find(params[:id])
+  @listing.update(listing_params)
+  redirect_to listing_path(@listing)
+  end
+
+  def destroy
+  @listing = Listing.find(params[:id])
+  @listing.destroy
+
+  redirect_to :root
+  end
 
     private
 
