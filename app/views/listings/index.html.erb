@@ -4,14 +4,22 @@
 
  <% @listings.each do |listing| %>
  <% if listing.photo.attached? %>
-<div class="card-product">
+<%= link_to listing_path(listing) do %>
+<div class="card-product mt-5">
 <%= cl_image_tag listing.photo.key, height: 200, width: 200, crop: :fill  %>
 
  <div class="card-product-infos">
-    <h2>listing.price</h2>
-    <p>listing.description</p>
+    <h2> R<%= listing.price %></h2>
+    <p><%= listing.description %></p>
+  <div >
+    <i class="fas fa-bed "> <%= listing.beds.to_i %> </i>
+    <i class="fas fa-bath ml-3"> <%= listing.baths.to_i %></i>
+    <i class="fas fa-car ml-3"> <%= listing.garages.to_i %> </i>
   </div>
+  </div>
+  <br>
 </div>
+<% end %>
 
  <% end %>
 
