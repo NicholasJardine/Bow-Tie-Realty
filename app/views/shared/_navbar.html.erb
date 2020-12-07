@@ -33,6 +33,9 @@
       <p class="nav-item active">
         <%= link_to "About", pages_about_path, class: "nav-link" %>
       </p>
+      <p class="nav-item active">
+      <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link" %>
+      </p>
   </div>
 </div>
 
