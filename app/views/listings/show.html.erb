@@ -1,3 +1,6 @@
+
+<% if user_signed_in? %>
+
   <% if @user.email == "arlenelapan@gmail.com" %>
       <%= link_to edit_listing_path do %>
     <h3 style=" color:black;">Edit listing </h3>
@@ -5,5 +8,7 @@
     <%= link_to listing_path(@listing), data: { confirm: "Are you sure?" }, method: :delete do%>
     <h3 style=" color:black;">Delete listing </h3>
     <% end %>
+<% end %>
+
 
   <% end %>

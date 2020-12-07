@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-lg-6" style="position: relative; margin: 0 auto;">
+<div style="margin-top: 56px;">
+              <%= simple_form_for [@listing] do |f| %>
+              <div class="form_inputs">
+                <div class="new-form-inputs">
+                <%= f.input :photo, as: :file, label: "Cover image for listing" %>
+                <%= f.input :title, label: "The title of the listing" %>
+                <%= f.input :description, label: "Short listing description" %>
+                <%= f.input :location, label: "Address or Area" %>
+                <%= f.input :beds, label: "Number of Beds" %>
+                <%= f.input :baths, label: "Number of Baths" %>
+                <%= f.input :garages, label: "Number of Garages" %>
+                <%= f.input :price, label: "Price" %>
+                <%= f.input :pic1, as: :file, label: "Additional photo for listing" %>
+                <%= f.input :pic2, as: :file, label: "Additional photo for listing" %>
+                <%= f.input :pic3, as: :file, label: "Additional photo for listing" %>
+                <%= f.input :pic4, as: :file, label: "Additional photo for listing" %>
+                <%= f.input :pic5, as: :file, label: "Additional photo for listing" %>
+                <%= f.input :pic6, as: :file, label: "Additional photo for listing" %>
+                <%= f.input :pic7, as: :file, label: "Additional photo for listing" %>
+                <%= f.input :pic8, as: :file, label: "Additional photo for listing" %>
+                <%= f.input :pic9, as: :file, label: "Additional photo for listing" %>
+                <%= f.input :pic10, as: :file, label: "Additional photo for listing" %>
+                <%= f.hidden_field :user_id, value: @user.id%>
+
+        <%= f.button :submit, class: " btn-flat-arlene my-5", value: "Update listing" %>
+<% end %>
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+    </div>
+  </div>
+
+</div>
+
+
