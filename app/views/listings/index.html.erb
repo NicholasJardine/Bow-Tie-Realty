@@ -5,7 +5,7 @@
  <% @listings.each do |listing| %>
  <% if listing.photo.attached? %>
 <div class="card-product">
-<%= cl_image_tag listing.photo %>
+<%= cl_image_tag listing.photo.key, height: 200, width: 200, crop: :fill  %>
 
  <div class="card-product-infos">
     <h2>listing.price</h2>
