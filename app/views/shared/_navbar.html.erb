@@ -1,37 +1,3 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to pages_home_path, class: "navbar-brand" do %>
-    <%= image_tag "br.png" %>
-  <% end %>
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-
-  <div class="d-flex" style="justify-content: space-between;">
-      <p class="navbar-item">
-        <%= link_to "Home", pages_home_path, class: "nav-link" %>
-      </p>
-      <p class="nav-item active">
-        <%= link_to "Contact", pages_contact_path, class: "nav-link" %>
-      </p>
-      <p class="nav-item active">
-        <%= link_to "About", pages_about_path, class: "nav-link" %>
-      </p>
-
-
-      <p class="nav-item active">
-        <%= link_to "Sign up", new_user_registration_path, class: "nav-link" %>
-      </p>
-      <p class="nav-item active">
-        <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-      </p>
-
-            <p class="nav-item active">
-        <%= link_to "Listings", listings_path, class: "nav-link" %>
-      </p>
-  </div>
-</div>
 
 <% if user_signed_in? %>
 
@@ -47,6 +13,17 @@
 
 
   <div class="d-flex" style="justify-content: space-between;">
+
+    <% if @user.email == "arlenelapan@gmail.com" %>
+            <p class="nav-item active">
+        <%= link_to "Create Listing", new_listing_path, class: "nav-link" %>
+      </p>
+    <% end %>
+
+
+            <p class="nav-item active">
+        <%= link_to "Listings", listings_path, class: "nav-link" %>
+      </p>
       <p class="navbar-item">
         <%= link_to "Home", pages_home_path, class: "nav-link" %>
       </p>
@@ -56,13 +33,36 @@
       <p class="nav-item active">
         <%= link_to "About", pages_about_path, class: "nav-link" %>
       </p>
+  </div>
+</div>
+
+<% else %>
+
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <%= link_to pages_home_path, class: "navbar-brand" do %>
+    <%= image_tag "br.png" %>
+  <% end %>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
 
-    <% if @user.email == arlenelapan@gmail.com %>
-            <p class="nav-item active">
-        <%= link_to "New Listing", new_user_registration_path, class: "nav-link" %>
+  <div class="d-flex" style="justify-content: space-between;">
+      <p class="navbar-item">
+        <%= link_to "Home", pages_home_path, class: "nav-link" %>
       </p>
-    <% end %>
+            <p class="nav-item active">
+        <%= link_to "Listings", listings_path, class: "nav-link" %>
+      </p>
+      <p class="nav-item active">
+        <%= link_to "Contact", pages_contact_path, class: "nav-link" %>
+      </p>
+      <p class="nav-item active">
+        <%= link_to "About", pages_about_path, class: "nav-link" %>
+      </p>
+
+
       <p class="nav-item active">
         <%= link_to "Sign up", new_user_registration_path, class: "nav-link" %>
       </p>
@@ -70,10 +70,8 @@
         <%= link_to "Login", new_user_session_path, class: "nav-link" %>
       </p>
 
-            <p class="nav-item active">
-        <%= link_to "Listings", listings_path, class: "nav-link" %>
-      </p>
   </div>
 </div>
 
 <% end %>
+

@@ -1,7 +1,7 @@
 class ListingsController < ApplicationController
   def index
     @user = current_user
-    @listings = listing.all
+    @listings = Listing.all
 
   end
     def new
