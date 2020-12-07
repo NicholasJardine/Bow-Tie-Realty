@@ -1,19 +1,18 @@
 <div class="container">
   <div class="row">
     <div class="col-12 col-lg-6" style="position: relative; margin: 0 auto;">
-<div>
+<div style="margin-top: 56px;">
               <%= simple_form_for [@listing] do |f| %>
               <div class="form_inputs">
                 <div class="new-form-inputs">
-                <%= f.input :title, label: "The title of the listing" %>
-                <%= f.input :photo, label: "Author of the listing" %>
-                <%= f.input :description, label: "Short listing description" %>
-                <%= f.input :location, label: "address or area" %>
-                <%= f.input :beds, label: "Number of beds" %>
-                <%= f.input :baths, label: "Number of baths" %>
-                <%= f.input :garages, label: "Number of garages" %>
-                <%= f.input :price, label: "Price" %>
                 <%= f.input :photo, as: :file, label: "Cover image for listing" %>
+                <%= f.input :title, label: "The title of the listing" %>
+                <%= f.input :description, label: "Short listing description" %>
+                <%= f.input :location, label: "Address or Area" %>
+                <%= f.input :beds, label: "Number of Beds" %>
+                <%= f.input :baths, label: "Number of Baths" %>
+                <%= f.input :garages, label: "Number of Garages" %>
+                <%= f.input :price, label: "Price" %>
                 <%= f.input :pic1, as: :file, label: "Additional photo for listing" %>
                 <%= f.input :pic2, as: :file, label: "Additional photo for listing" %>
                 <%= f.input :pic3, as: :file, label: "Additional photo for listing" %>
@@ -24,7 +23,7 @@
                 <%= f.input :pic8, as: :file, label: "Additional photo for listing" %>
                 <%= f.input :pic9, as: :file, label: "Additional photo for listing" %>
                 <%= f.input :pic10, as: :file, label: "Additional photo for listing" %>
-        <%= f.button :submit, class: "btn btn-flat-orange", value: "Create listing" %>
+        <%= f.button :submit, class: " btn-flat-arlene my-5", value: "Create listing" %>
 <% end %>
 
             </div>
