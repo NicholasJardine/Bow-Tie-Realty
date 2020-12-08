@@ -83,7 +83,7 @@ end
     private
 
   def listing_params
-    params.require(:listing).permit(:user_id, :location, :pic1, :pic2, :pic3, :pic4, :pic5, :pic6, :pic7, :pic8, :pic9, :pic10, :photo, :price, :description, :beds, :baths, :garages, :sqaurem)
+    params.require(:listing).permit(:user_id, :location, :pic1, :pic2, :pic3, :pic4, :pic5, :pic6, :pic7, :pic8, :pic9, :pic10, :photo, :price, :description, :beds, :baths, :garages, :sqaurem, :caption)
   end
 
 end
