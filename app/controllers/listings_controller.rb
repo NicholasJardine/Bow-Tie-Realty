@@ -27,9 +27,7 @@ def show
   @user = current_user
   @listing = Listing.find(params[:id])
   @pictures = []
-  if @listing.photo.attached?
-     @pictures.push(@listing.photo)
-  end
+
     if @listing.pic1.attached?
      @pictures.push(@listing.pic1)
   end
