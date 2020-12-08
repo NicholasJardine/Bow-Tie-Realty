@@ -33,7 +33,6 @@
             </div>
 
     <div class="carousel-caption d-none d-md-block">
-
     </div>
 
 
@@ -42,6 +41,12 @@
 
         </div>
 
+  <div class="mt-5">
+    <i class="fas fa-bed "> <%= @listing.beds.to_i %> </i>
+    <i class="fas fa-bath ml-3"> <%= @listing.baths.to_i %></i>
+    <i class="fas fa-car ml-3"> <%= @listing.garages.to_i %> </i>
+    <i class="fas fa-square-full ml-3"> <%= @listing.squarem %> m2</i>
+  </div>
         <br><br>
 
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -52,7 +57,7 @@
         </a>
       </div>
   </div>
-<div class="col-8" style="margin: 0 auto; position: relative; background-color:white;">
+<div class="col-8" style="margin: 0 auto; position: relative; background-color:transparent;">
   <p style="font-size:1.25rem;"> <%= @listing.description %> </p>
 </div>
 
