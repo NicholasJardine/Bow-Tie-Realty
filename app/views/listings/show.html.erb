@@ -18,17 +18,17 @@
 <div class="row" style="background:transparent;">
 
   <div class="col-12 col-md-12 col-lg-12 " style="position: relative; margin: 0 auto;">
-    <div id="carouselExampleIndicators" class="carousel slide custom-slider" data-ride="carousel"style="width: 750px; position: relative; margin: 0 auto;">
+    <div id="carouselExampleIndicators" class="carousel slide custom-slider" data-interval="false" style="width: 750px; position: relative; margin: 0 auto;">
         <div class="carousel-inner"style="width: 750px;" style="position: relative; margin:0 auto;">
           <div class="carousel-item active" style="position: relative; margin:0 auto;">
-            <div class="carousel-img-container d-flex justify-content-center" style="border:solid 4px;">
+            <div class="carousel-img-container d-flex justify-content-center" style="border:solid 1px;">
     <%= cl_image_tag @listing.photo.key, height: 500, width: 1000, crop: :scale, class: "d-block w-100 lala" %>
             </div>
 
           </div>
               <% @pictures.each do |picture| %>
           <div class="carousel-item" style="position: relative; margin:0 auto;">
-            <div class="carousel-img-container d-flex justify-content-center" style="border:solid 4px;">
+            <div class="carousel-img-container d-flex justify-content-center" style="border:solid 1px;">
      <%= cl_image_tag picture.key, height: 500, width: 1000, crop: :scale, class: "d-block w-100" %>
             </div>
 
@@ -52,7 +52,7 @@
         </a>
       </div>
   </div>
-<div class="col-8" style="margin: 0 auto; position: relative;">
+<div class="col-8" style="margin: 0 auto; position: relative; background-color:white;">
   <p style="font-size:1.25rem;"> <%= @listing.description %> </p>
 </div>
 
