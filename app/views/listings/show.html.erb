@@ -1,18 +1,4 @@
 
-<% if user_signed_in? %>
-
-  <% if @user.email == "arlenelapan@gmail.com" %>
-      <%= link_to edit_listing_path do %>
-    <h3 style=" color:black;">Edit listing </h3>
-    <% end %>
-    <%= link_to listing_path(@listing), data: { confirm: "Are you sure?" }, method: :delete do%>
-    <h3 style=" color:black;">Delete listing </h3>
-    <% end %>
-<% end %>
-
-
-  <% end %>
-
 
 <div class="container mt-5">
 <div class="row" style="background:transparent;">
@@ -57,10 +43,25 @@
         </a>
       </div>
   </div>
-<div class="col-8" style="margin: 0 auto; position: relative; background-color:transparent;">
+<div class="col-12 col-lg-8 mb-5" style="margin: 0 auto; position: relative; background-color:transparent;">
   <p style="font-size:1.25rem;"> <%= @listing.description %> </p>
 </div>
 
 </div>
 
 </div>
+
+
+<% if user_signed_in? %>
+
+  <% if @user.email == "arlenelapan@gmail.com" %>
+      <%= link_to edit_listing_path do %>
+    <h3 style=" color:black;">Edit listing </h3>
+    <% end %>
+    <%= link_to listing_path(@listing), data: { confirm: "Are you sure?" }, method: :delete do%>
+    <h3 style=" color:black;">Delete listing </h3>
+    <% end %>
+<% end %>
+
+
+  <% end %>
