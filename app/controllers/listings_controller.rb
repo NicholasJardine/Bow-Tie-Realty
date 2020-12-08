@@ -26,6 +26,40 @@ class ListingsController < ApplicationController
 def show
   @user = current_user
   @listing = Listing.find(params[:id])
+  @pictures = []
+  if @listing.photo.attached?
+     @pictures.push(@listing.photo)
+  end
+    if @listing.pic1.attached?
+     @pictures.push(@listing.pic1)
+  end
+    if @listing.pic2.attached?
+     @pictures.push(@listing.pic2)
+  end
+    if @listing.pic3.attached?
+     @pictures.push(@listing.pic3)
+  end
+    if @listing.pic4.attached?
+     @pictures.push(@listing.pic4)
+  end
+    if @listing.pic5.attached?
+     @pictures.push(@listing.pic5)
+  end
+    if @listing.pic6.attached?
+     @pictures.push(@listing.pic6)
+  end
+    if @listing.pic7.attached?
+     @pictures.push(@listing.pic7)
+  end
+    if @listing.pic8.attached?
+     @pictures.push(@listing.pic8)
+  end
+    if @listing.pic9.attached?
+     @pictures.push(@listing.pic9)
+  end
+      if @listing.pic10.attached?
+     @pictures.push(@listing.pic10)
+  end
 end
 
 
