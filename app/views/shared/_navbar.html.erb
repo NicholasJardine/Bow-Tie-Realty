@@ -30,8 +30,8 @@
       <p class="nav-item active">
         <%= link_to "Contact", pages_contact_path, class: "nav-link" %>
       </p>
-      <p class="nav-item active mt-2">
-        <%= link_to "About", pages_about_path, class: "dropdown-item" %>
+      <p class="nav-item active">
+        <%= link_to "About", pages_about_path, class: "nav-link" %>
       </p>
       <p class="nav-item active mt-2">
       <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
@@ -52,11 +52,11 @@
 
 
   <div class="d-flex" style="justify-content: space-between;">
-      <p class="navbar-item">
-        <%= link_to "Home", pages_home_path, class: "nav-link" %>
-      </p>
             <p class="nav-item active">
         <%= link_to "Listings", listings_path, class: "nav-link" %>
+      </p>
+      <p class="navbar-item">
+        <%= link_to "Home", pages_home_path, class: "nav-link" %>
       </p>
       <p class="nav-item active">
         <%= link_to "Contact", pages_contact_path, class: "nav-link" %>
